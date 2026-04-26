@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Perpustakaan Polusi Udara</title>
+    <style>
+        /* Gaya untuk seluruh halaman */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        /* Judul utama */
+        h1 {
+            text-align: center;
+            color: #2e7d32;
+            margin-bottom: 40px;
+        }
+        
+        /* Kontainer untuk kumpulan buku (flexbox) */
+        .book-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        /* Satu kotak buku */
+        .book-card {
+            background-color: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        /* Efek saat mouse di atas kotak */
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        
+        /* Gaya gambar buku (pakai emoji besar) */
+        .book-cover {
+            font-size: 80px;
+            margin-bottom: 10px;
+        }
+        
+        /* Judul buku di dalam kotak */
+        .book-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #1b5e20;
+            margin-bottom: 10px;
+        }
+        
+        /* Deskripsi singkat */
+        .book-description {
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>📚 Perpustakaan Polusi Udara</h1>
+    
+    <div class="book-container">
+        <!-- Satu buku: klik akan ke buku1.html -->
+        <div class="book-card" onclick="location.href='/book'">
+            <div class="book-cover">📘</div>
+            <div class="book-title">Apa Itu Polusi Udara?</div>
+            <div class="book-description">Pengertian polusi udara, sumber, dan jenis-jenisnya.</div>
+        </div>
+        
+        <!-- Nanti bisa tambah buku lain dengan copy-paste div di atas -->
+    </div>
+
+</body>
+</html>
